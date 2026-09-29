@@ -1,0 +1,9 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NafaPoint</title><link rel="stylesheet" href="/style.css"></head>
+<body><header><b>NafaPoint</b><span>DEMO • NO REAL MONEY</span></header><main>
+<div id="auth" class="card"><h1>NafaPoint</h1><p>Investment simulator for private testing with friends.</p>
+<div class="tabs"><button onclick="mode('login')">Login</button><button onclick="mode('signup')">Sign up</button></div>
+<input id="name" placeholder="Full name"><input id="email" placeholder="Email"><input id="password" type="password" placeholder="Password"><button onclick="submitAuth()">Continue</button><small>All balances and transactions are virtual. Deposit/withdrawal uses demo credits only.</small></div>
+<div id="app" hidden><div class="top"><h1>Dashboard</h1><button onclick="logout()">Logout</button></div><div id="profile" class="stats"></div>
+<div class="card"><h2>Virtual Investment</h2><input id="amount" type="number" placeholder="Amount (Rs.)"><button onclick="invest()">Invest</button><button class="secondary" onclick="demoDeposit()">Demo Deposit</button><button class="secondary" onclick="demoWithdraw()">Demo Withdraw</button></div>
+<div class="card"><h2>Transactions</h2><div id="tx"></div></div><div id="admin" class="card" hidden><h2>Admin Panel</h2><div id="users"></div></div></div></main>
+<script src="/app.js"></script></body></html>
